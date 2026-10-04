@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>ملخص المسار التدريبي - التقنيات والبرامج</title>
+<style>
+:root {
+--primary-navy: #1B2B65;
+--primary-purple: #6C2BD9;
+--accent-green: #10B981;
+--accent-cyan: #0EA5E9;
+--bg-light: #F8FAFC;
+--text-dark: #1E293B;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: var(--bg-light);
+color: var(--text-dark);
+margin: 0;
+padding: 40px 20px;
+direction: rtl;
+}
+
+.container {
+max-width: 900px;
+margin: 0 auto;
+background: #ffffff;
+border-radius: 16px;
+box-shadow: 0 10px 25px rgba(27, 43, 101, 0.08);
+overflow: hidden;
+border: 1px solid #E2E8F0;
+}
+
+.header {
+background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-purple) 50%, var(--accent-cyan) 100%);
+color: #ffffff;
+padding: 35px 40px;
+position: relative;
+}
+
+.header h1 {
+margin: 0 0 10px 0;
+font-size: 26px;
+color: #ffffff;
+font-weight: 700;
+}
+
+.header p {
+margin: 0;
+color: #E2E8F0;
+font-size: 15px;
+}
+
+.badge {
+display: inline-block;
+background: rgba(255, 255, 255, 0.18);
+padding: 6px 14px;
+border-radius: 20px;
+font-size: 13px;
+margin-top: 15px;
+color: #fff;
+backdrop-filter: blur(5px);
+}
+
+.content {
+padding: 35px 40px;
+}
+
+.tech-summary-bar {
+display: flex;
+gap: 15px;
+margin-bottom: 30px;
+flex-wrap: wrap;
+}
+
+.tech-pill {
+background: #F1F5F9;
+border: 1px solid #CBD5E1;
+padding: 8px 16px;
+border-radius: 8px;
+font-size: 13px;
+font-weight: 600;
+color: var(--primary-navy);
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+gap: 20px;
+margin-bottom: 25px;
+}
+
+.card {
+background: #ffffff;
+border-radius: 12px;
+padding: 22px;
+border-right: 5px solid var(--primary-navy);
+box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.card.purple-border {
+border-color: var(--primary-purple);
+background-color: #FAF5FF;
+}
+
+.card.green-border {
+border-color: var(--accent-green);
+background-color: #F0FDF4;
+}
+
+.card.cyan-border {
+border-color: var(--accent-cyan);
+background-color: #F0F9FF;
+}
+
+.card.navy-border {
+border-color: var(--primary-navy);
+background-color: #F8FAFC;
+}
+
+.card h3 {
+margin-top: 0;
+margin-bottom: 12px;
+font-size: 17px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.card.navy-border h3 { color: var(--primary-navy); }
+.card.purple-border h3 { color: var(--primary-purple); }
+.card.green-border h3 { color: #047857; }
+.card.cyan-border h3 { color: #0369A1; }
+
+.meta-tag {
+font-size: 12px;
+font-weight: bold;
+margin-bottom: 10px;
+padding: 4px 8px;
+border-radius: 4px;
+display: inline-block;
+}
+
+.purple-tag { background: #E9D5FF; color: #581C87; }
+.navy-tag { background: #E0E7FF; color: #1E1B4B; }
+.cyan-tag { background: #E0F2FE; color: #0C4A6E; }
+.green-tag { background: #D1FAE5; color: #064E3B; }
+
+ul {
+margin: 0;
+padding-right: 18px;
+font-size: 14px;
+line-height: 1.7;
+color: #334155;
+}
+
+li {
+margin-bottom: 6px;
+}
+
+.summary-box {
+background: linear-gradient(90deg, #1B2B65 0%, #6C2BD9 100%);
+color: white;
+padding: 20px 25px;
+border-radius: 12px;
+margin-top: 10px;
+}
+
+.summary-box h4 {
+margin: 0 0 8px 0;
+font-size: 16px;
+color: #6EE7B7;
+}
+
+.summary-box p {
+margin: 0;
+font-size: 14px;
+line-height: 1.6;
+color: #F1F5F9;
+}
+
+.footer {
+text-align: center;
+padding: 20px;
+font-size: 12px;
+color: #94A3B8;
+border-top: 1px solid #F1F5F9;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="header" style="display: flex; justify-content: space-between; align-items: center;">
+<div>
+<h1>تقرير الإنجاز الأسبوعي لمهارات وتقنيات البرمجة</h1>
+<p>خلاصة إنجاز أسبوع البرمجة</p>
+<span class="badge">إعداد: لينا الدوسري - إدارة تقنية المعلومات</span>
+</div>
+<div>
+<img src="logo.png" alt="شعار الهيئة" style="max-height: 250px; width:auto;">
+</div>
+</div>
+
+
+<div class="content">
+
+<div class="grid-container">
+
+<!-- Card 1 -->
+<div class="card purple-border">
+<span class="meta-tag purple-tag">اللغات: C# | البرنامج: Visual Studio 2022</span>
+<h3>1. البرمجة الأساسية والمتقدمة (C# Fundamentals)</h3>
+<ul>
+<li><b>البرامج المستخدمة:</b> بيئة التطوير المتكاملة <b>Visual Studio 2022</b> وحزمة <b>.NET 6 SDK</b>[span_0](start_span)[span_0](end_span).</li>
+<li><b>اللغات:</b> لغة البرمجة **C#**.</li>
+<li><b>أبرز المفاهيم:</b> التمييز بين المصفوفات (Arrays) والمجموعات (Collections) لرفع كفاءة معالجة البيانات.</li>
+<li><b>هياكل البيانات:</b> تطبيق أساليب <code>Generic List</code> و <code>Stack</code> و <code>Queue</code> لسلامة وتنظيم الكود.</li>
+</ul>
+</div>
+
+<!-- Card 2 -->
+<div class="card navy-border">
+<span class="meta-tag navy-tag">اللغات: C#, HTML, CSS | البرنامج: Visual Studio 2022</span>
+<h3>2. تطبيقات الويب (ASP.NET Core MVC)</h3>
+<ul>
+<li><b>البرامج المستخدمة:</b> منصة <b>Visual Studio 2022</b> لإدارة وتنسيق كود المشروع.</li>
+<li><b>اللغات وتقنيات العرض:</b> لغة **C#** للخدمات الخلفية، ولغات **HTML & CSS** للواجهات.</li>
+<li><b>أبرز المفاهيم:</b> تطبيق معمارية Model-View-Controller لتوزيع مهام النظام وسهولة الصيانة والتوسع.</li>
+<li><b>الملفات المساعدة:</b> استخدام <code>Program.cs</code> لحقن التبعيات و <code>appsettings.json</code> لسلاسل الاتصال.</li>
+</ul>
+</div>
+
+<!-- Card 3 -->
+<div class="card cyan-border">
+<span class="meta-tag cyan-tag">اللغات: C#, JSON | الأدوات: Swagger / OpenAPI</span>
+<h3>3. واجهات البرمجة والخدمات (Web API & Swagger)</h3>
+<ul>
+<li><b>البرامج والأدوات:</b> أداة <b>Swagger UI</b> المدمجة مع .NET 6 لاختبار واستعراض الـ Endpoints.</li>
+<li><b>اللغات وصيغ البيانات:</b> لغة **C#** لبناء الخدمات، وصيغة **JSON** لنقل البيانات بين الأنظمة.</li>
+<li><b>أبرز المفاهيم:</b> الربط بين الأنظمة المتباعدة والبرمجيات عبر طلبات بروتوكول HTTP بسرعة وأمان.</li>
+<li><b>دورة معالجة الطلب:</b> تنظيم التوجيه والحماية عبر تسلسل برمجيات الوسيط (Middleware).</li>
+</ul>
+</div>
+
+<!-- Card 4 -->
+<div class="card green-border">
+<span class="meta-tag green-tag">اللغات: T-SQL | البرنامج: SQL Server & SSMS</span>
+<h3>4. إدارة قواعد البيانات (SQL Server 2019)</h3>
+<ul>
+<li><b>البرامج المستخدمة:</b> خادم <b>SQL Server Express 2019</b> وواجهة <b>SQL Server Management Studio (SSMS)</b>.</li>
+<li><b>اللغات المستخدمة:</b> لغة الاستعلامات **SQL / T-SQL**.</li>
+<li><b>أبرز المفاهيم:</b> تصميم الجداول وربطها بالعلائق والمفاتيح (Primary & Foreign Keys).</li>
+<li><b>العمليات التشغيلية:</b> كتابة استعلامات السحب والفرز <code>SELECT TOP 1000</code> لضمان استقرار وسرعة البيانات.</li>
+</ul>
+</div>
+
+</div>
+
+<!-- Executive Summary -->
+<div class="summary-box">
+<h4>الخلاصة الموجهة للإدارة:</h4>
+<p>يغطي المسار منظومة تطويرية متكاملة ببدءاً من إتقان لغة <b>C#</b> وبيئة <b>Visual Studio</b>، مروراً بإنشاء تطبيقات الويب وخدمات الـ <b>Web API</b> بصيغة <b>JSON</b>، وصولاً لبناء وإدارة قواعد البيانات عبر <b>SQL Server</b>، مما يضمن القدرة على تنفيذ مشاريع مستقرة وقابلة للتوسع.</p>
+</div>
+</div>
+
+<div class="footer">
+تقرير البرمجة - قسم تقنية المعلومات
+</div>
+</div>
+
+</body>
+</html>
+
+
+
